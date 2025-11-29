@@ -5,6 +5,7 @@ const bgColor = document.querySelector(".nav-bg-color");
 
 openb.addEventListener("click", () => {
     mobileNavbar.style.display = "flex";
+    mobileNavbar.style.transition = "0.75s ease";
     if (mobileNavbar.style.display = "flex") {
         bgColor.style.display = "flex";
     }
