@@ -773,4 +773,36 @@ footer {
 #shop-cart-container {
   margin-top: 5rem;
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#shop-cart-container .next-btn-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 5rem;
+}
+
+#shop-cart-container .next-btn-con .btn {
+  border: none;
+  background-color: rgb(27, 81, 27);
+  padding: 10px 15px;
+  color: white;
+  font-size: var(--normal-font-aze);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#shop-cart-container .next-btn-con button {
+  border: none;
+  background-color: rgb(27, 81, 27);
+  padding: 5px 10px;
+  color: white;
+  font-size: var(--normal-font-aze);
+  border-radius: 5px;
+  cursor: pointer;
 }
