@@ -1,3 +1,6 @@
+
+
+// RESPONSIVE NAVIGATION BAR SECTION
 const openb = document.querySelector("#open-bar");
 const closeb = document.querySelector("#close-bar");
 const mobileNavbar = document.querySelector("#mobile-navbar");
@@ -21,4 +24,25 @@ closeb.addEventListener("click", () => {
 bgColor.addEventListener("click", () => {
     mobileNavbar.style.display = "none";
     bgColor.style.display = "none";
+})
+
+// TWO BANNERS HOVER EFFECT
+const bannerOne = document.querySelector(".banner-one");
+const bOneBtn = document.querySelector(".b1Btn");
+
+bannerOne.addEventListener("mouseover", () => {
+    bOneBtn.style.backgroundColor = "rgb(27, 81, 27)";
+})
+bannerOne.addEventListener("mouseout", () => {
+    bOneBtn.style.backgroundColor = "transparent";
+})
+
+const bannerTwo = document.querySelector(".banner-2");
+const bTwoBtn = document.querySelector(".b2Btn");
+
+bannerTwo.addEventListener("mouseover", () => {
+    bTwoBtn.style.backgroundColor = "rgb(27, 81, 27)";
+})
+bannerTwo.addEventListener("mouseout", () => {
+    bTwoBtn.style.backgroundColor = "transparent";
 })
