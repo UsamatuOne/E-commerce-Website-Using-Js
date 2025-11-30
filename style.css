@@ -942,7 +942,6 @@ footer {
 /* WHO WE ARE SECTION */
 #who-we-are {
   width: 90%;
-  height: 400px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -989,4 +988,29 @@ footer {
 
 .wwa-text marquee {
   background-color: grey;
+}
+
+/* DOWNLOAD OUR APP SECTION */
+#download {
+  margin-top: 5rem;
+}
+
+.download-con {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  gap: 1rem;
+}
+
+.download-con h1 {
+  font-size: var(--big-fon-size);
+}
+
+video {
+  width: 100%;
+  border-radius: 1rem;
 }
