@@ -1015,3 +1015,45 @@ video {
   width: 100%;
   border-radius: 1rem;
 }
+
+/* |||||||||||||||||| */
+/* ABOUT.HTML SECTION */
+/* |||||||||||||||||| */
+
+/* conatct us map section */
+#contact-us-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 500px;
+  height: 400px;
+  gap: 1rem;
+}
+
+.get-in-touch h6 {
+  font-size: var(--semi-big-font-size);
+  color: rgb(196, 188, 188);
+}
+
+.get-in-touch h1 {
+  font-size: var(--normal-font-aze);
+}
+
+.get-in-touch span {
+  font-size: var(--normal-font-aze);
+}
+
+.map {
+  width: 500px;
+  height: 400px;
+}
