@@ -1026,6 +1026,7 @@ video {
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   gap: 5rem;
   flex-wrap: wrap;
 }
@@ -1056,4 +1057,87 @@ video {
 .map {
   width: 500px;
   height: 400px;
+}
+
+/* from section */
+#form-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 2px rgb(149, 146, 146);
+  margin-top: 5rem;
+  width: 90%;
+  margin: auto;
+  padding: 5rem;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+#form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form h6 {
+  font-size: var(--normal-font-aze);
+  font-weight: 100;
+}
+
+form h1 {
+  font-size: var(--big-fon-size);
+}
+
+form input {
+  padding: 1rem;
+}
+
+form textarea {
+  height: 200px;
+  padding: 1rem;
+}
+
+form button {
+  background-color: green;
+  padding: 1rem;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: var(--normal-font-aze);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.img-text1 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.img-text1 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.img-text1 h2 {
+  font-size: var(--semi-big-font-size);
+}
+
+.img-text1 h6 {
+  color: gray;
 }
