@@ -27,22 +27,23 @@ bgColor.addEventListener("click", () => {
 })
 
 // TWO BANNERS HOVER EFFECT
-const bannerOne = document.querySelector(".banner-one");
-const bOneBtn = document.querySelector(".b1Btn");
+const banner1 = document.querySelector("#banner-one");
+const bOneBtn = document.querySelector("#b1Btn");
 
-bannerOne.addEventListener("mouseover", () => {
+banner1.addEventListener("mouseover", () => {
     bOneBtn.style.backgroundColor = "rgb(27, 81, 27)";
 })
-bannerOne.addEventListener("mouseout", () => {
+banner1.addEventListener("mouseout", () => {
     bOneBtn.style.backgroundColor = "transparent";
 })
 
-const bannerTwo = document.querySelector(".banner-2");
-const bTwoBtn = document.querySelector(".b2Btn");
+const banner2 = document.querySelector("#banner-2");
+const bTwoBtn = document.querySelector("#b2Btn");
 
-bannerTwo.addEventListener("mouseover", () => {
+banner2.addEventListener("mouseover", () => {
     bTwoBtn.style.backgroundColor = "rgb(27, 81, 27)";
 })
-bannerTwo.addEventListener("mouseout", () => {
+banner2.addEventListener("mouseout", () => {
     bTwoBtn.style.backgroundColor = "transparent";
 })
+
