@@ -46,10 +46,3 @@ banner2.addEventListener("mouseover", () => {
 banner2.addEventListener("mouseout", () => {
     bTwoBtn.style.backgroundColor = "transparent";
 })
-
-// index.html and sproduct.html 
-const pCard = document.querySelector(".p-card");
-
-pCard.addEventListener("click", () => {
-    window.location.href = "sproduct.html";
-})
