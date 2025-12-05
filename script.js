@@ -46,3 +46,27 @@ banner2.addEventListener("mouseover", () => {
 banner2.addEventListener("mouseout", () => {
     bTwoBtn.style.backgroundColor = "transparent";
 })
+
+// TEXT SLIDE SECTION
+const slideArray =
+    ["Free Shippping", "Online Order",
+        "Promotion", "Save Money",
+        "F24/7 Support", "Happy Sells"];
+
+let slideItem = document.querySelector("#slide-item");
+let slideIndex = 0;
+
+slide();
+function slide() {
+
+    if (slideIndex >= slideArray.length) {
+        slideIndex = 0;
+    }
+
+    slideItem.innerText = slideArray[slideIndex];
+
+    setTimeout(() => {
+        slideIndex++;
+        slide();
+    }, 2500);
+}

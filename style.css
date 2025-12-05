@@ -121,6 +121,14 @@ body {
   cursor: pointer;
 }
 
+.slide {
+  display: flex;
+  width: 150px;
+  overflow: hidden;
+  gap: 5rem;
+}
+
+
 /* FEATURES SECTION */
 .boxes {
   display: flex;
@@ -136,7 +144,6 @@ body {
   width: 150px;
   border-radius: 2px;
   margin: 1rem 0 1rem 0;
-  text-align: center;
   height: 170px;
   display: flex;
   flex-direction: column;
@@ -1311,4 +1318,11 @@ span img {
   color: white;
   width: 200px;
   cursor: pointer;
+}
+
+.copy-right span {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
