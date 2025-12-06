@@ -156,7 +156,7 @@
                     <h6>$335</h6>
                 </div>
             </div>
-            <button>Proceed to checkout</button>
+            <button id="checkout">Proceed to checkout</button>
         </div>
     </sectiom>
 
@@ -256,7 +256,37 @@
     <div class="copy-right">
         <span>&copy;2025. Developed By Usama Muhammad Haruna at Soventtech</span>
     </div>
-    <script src="./script.js"></script>
+    <script>
+        // RESPONSIVE NAVIGATION BAR SECTION
+        const openb = document.querySelector("#open-bar");
+        const closeb = document.querySelector("#close-bar");
+        const mobileNavbar = document.querySelector("#mobile-navbar");
+        const bgColor = document.querySelector(".nav-bg-color");
+
+        openb.addEventListener("click", () => {
+            mobileNavbar.style.display = "flex";
+            mobileNavbar.style.transition = "0.75s ease";
+            if (mobileNavbar.style.display = "flex") {
+                bgColor.style.display = "flex";
+            }
+        })
+
+        closeb.addEventListener("click", () => {
+            mobileNavbar.style.display = "none";
+            if (mobileNavbar.style.display = "none") {
+                bgColor.style.display = "none";
+            }
+
+        })
+        bgColor.addEventListener("click", () => {
+            mobileNavbar.style.display = "none";
+            bgColor.style.display = "none";
+        })
+        // checkout section
+        const checkout = document.querySelector(" #checkout"); checkout.addEventListener("click", () => {
+            window.location.assign("payment.html");
+        })
+    </script>
 
 
 </body>

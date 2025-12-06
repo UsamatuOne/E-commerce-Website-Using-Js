@@ -15,13 +15,13 @@
         <img src="img/logo.png">
         <nav id="navbar">
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li>
-                    <a href="cart.html">
+                    <a href="cart.html" class="active">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                             fill="#000000">
                             <path
@@ -96,11 +96,31 @@
                     </select>
                     <input type="text" placeholder="cvv">
                 </div>
-                <a href="#">Pay</a>
+                <button id="pay">Pay</button>
             </div>
         </div>
     </section>
 
+    <section id="successful-pay" class="successful-pop">
+        <img src="./img/payment icons/transaction.png">
+        <h5>Payment Successful</h5>
+        <a href="#" id="done">Done</a>
+    </section>
+
+    <script>
+        const pay = document.querySelector("#pay");
+        const done = document.querySelector("#done");
+        const successfulPay = document.querySelector("#successful-pay");
+
+        pay.addEventListener("click", () => {
+            successfulPay.classList.add("open");
+        })
+        done.addEventListener("click", () => {
+            window.location.assign("cart.html");
+        })
+
+
+    </script>
 </body>
 
 </html>
