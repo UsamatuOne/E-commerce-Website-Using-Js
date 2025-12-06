@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce Website</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="payment-index">
     <section class="nav-bg-color"></section>
     <section id="header">
         <img src="img/logo.png">
@@ -60,6 +61,44 @@
                 </li>
             </ul>
         </nav>
+    </section>
+
+    <section id="card">
+        <div class="card-con">
+            <div class="ag-con">
+                <a href="#"><img src="./img/payment icons/apple-pay_5968279.png"></a>
+                <a href="#"><img src="./img/payment icons/google-pay_6124998.png"></a>
+            </div>
+            <div class="inputs-con">
+                <input type="text" name="" id="" placeholder="Card Holder Name">
+                <input type="text" name="" id="" placeholder="Card Number">
+                <div class="ex-cvv">
+                    <select placeholder="Month">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>Aug</option>
+                        <option>Sept</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </select>
+                    <select>
+                        <option value="">2020</option>
+                        <option value="">2022</option>
+                        <option value="">2023</option>
+                        <option value="">2024</option>
+                        <option value="">2025</option>
+                    </select>
+                    <input type="text" placeholder="cvv">
+                </div>
+                <a href="#">Pay</a>
+            </div>
+        </div>
     </section>
 
 </body>
