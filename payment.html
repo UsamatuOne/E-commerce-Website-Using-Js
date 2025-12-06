@@ -45,13 +45,13 @@
                             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                     </svg>
                 </li>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li>
-                    <a href="cart.html">
+                    <a href="cart.html" class="active">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                             fill="#000000">
                             <path
@@ -70,10 +70,10 @@
                 <a href="#"><img src="./img/payment icons/google-pay_6124998.png"></a>
             </div>
             <div class="inputs-con">
-                <input type="text" name="" id="" placeholder="Card Holder Name">
-                <input type="text" name="" id="" placeholder="Card Number">
+                <input type="text" name="" id="Card-no" placeholder="Card Holder Name" required>
+                <input type="text" name="" id="Card-name" placeholder="Card Number" required>
                 <div class="ex-cvv">
-                    <select placeholder="Month">
+                    <select placeholder="Month" required>
                         <option>Jan</option>
                         <option>Feb</option>
                         <option>March</option>
@@ -94,7 +94,7 @@
                         <option value="">2024</option>
                         <option value="">2025</option>
                     </select>
-                    <input type="text" placeholder="cvv">
+                    <input type="text" placeholder="cvv" required id="cvv">
                 </div>
                 <button id="pay">Pay</button>
             </div>
@@ -112,14 +112,12 @@
         const done = document.querySelector("#done");
         const successfulPay = document.querySelector("#successful-pay");
 
-        pay.addEventListener("click", () => {
+        pay.addEventListener("click", e => {
             successfulPay.classList.add("open");
         })
         done.addEventListener("click", () => {
             window.location.assign("cart.html");
         })
-
-
     </script>
 </body>
 
