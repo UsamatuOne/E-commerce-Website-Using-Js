@@ -1466,3 +1466,42 @@ span img {
 .successful-pop a:hover {
   background-color: rgb(29, 172, 29);
 }
+
+.cardno-div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.cardno-div span {
+  color: red;
+  font-size: small;
+}
+
+.cardname-div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.cardname-div span {
+  color: red;
+  font-size: small;
+}
+
+.cardcvv-div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.cardcvv-div span {
+  color: red;
+  font-size: small;
+}

@@ -70,8 +70,14 @@
                 <a href="#"><img src="./img/payment icons/google-pay_6124998.png"></a>
             </div>
             <div class="inputs-con">
-                <input type="text" name="" id="Card-no" placeholder="Card Holder Name" required>
-                <input type="text" name="" id="Card-name" placeholder="Card Number" required>
+                <div class="cardname-div">
+                    <input type="text" name="" id="card-name" placeholder="Card Holder Name" required>
+                    <span id="cardname-d"></span>
+                </div>
+                <div class="cardno-div">
+                    <input type="text" name="" id="card-no" placeholder="Card Number" required>
+                    <span id="cardno-d"></span>
+                </div>
                 <div class="ex-cvv">
                     <select placeholder="Month" required>
                         <option>Jan</option>
@@ -94,7 +100,10 @@
                         <option value="">2024</option>
                         <option value="">2025</option>
                     </select>
-                    <input type="text" placeholder="cvv" required id="cvv">
+                    <div class="cardcvv-div">
+                        <input type="text" placeholder="cvv" id="cvv">
+                        <span id="cvv-d"></span>
+                    </div>
                 </div>
                 <button id="pay">Pay</button>
             </div>
@@ -112,8 +121,37 @@
         const done = document.querySelector("#done");
         const successfulPay = document.querySelector("#successful-pay");
 
+        const cardName = document.querySelector("#card-name");
+        const cardNo = document.querySelector("#card-no");
+        const cvv = document.querySelector("#cvv");
+
+        const cardNameDanger = document.querySelector("#cardname-d");
+        const cardnoDanger = document.querySelector("#cardno-d");
+        const cvvDanger = document.querySelector("#cvv-d");
+
+
         pay.addEventListener("click", e => {
-            successfulPay.classList.add("open");
+            if (cardName.value !== "") {
+
+                cardNameDanger.textContent = "";
+            } else {
+                cardNameDanger.textContent = "Cardname required";
+
+            }
+            if (cardNo.value !== "") {
+                cardnoDanger.textContent = "";
+
+            } else {
+
+                cardnoDanger.textContent = "Card Number required";
+            }
+            if (cvv.value !== "") {
+                cvvDanger.textContent = "";
+                successfulPay.classList.add("open");
+            }
+            else {
+                cvvDanger.textContent = "Cvv required";
+            }
         })
         done.addEventListener("click", () => {
             window.location.assign("cart.html");
