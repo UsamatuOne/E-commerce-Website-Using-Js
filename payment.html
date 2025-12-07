@@ -131,27 +131,35 @@
 
 
         pay.addEventListener("click", e => {
-            if (cardName.value !== "") {
+            function execute(isTrue) {
 
-                cardNameDanger.textContent = "";
-            } else {
-                cardNameDanger.textContent = "Cardname required";
+                if (cardName.value !== "") {
 
-            }
-            if (cardNo.value !== "") {
-                cardnoDanger.textContent = "";
+                    cardNameDanger.textContent = "";
+                } else {
+                    cardNameDanger.textContent = "Cardname required";
+                    istrue === false;
 
-            } else {
+                }
+                if (cardNo.value !== "") {
+                    cardnoDanger.textContent = "";
 
-                cardnoDanger.textContent = "Card Number required";
+                } else {
+
+                    cardnoDanger.textContent = "Card Number required";
+                    istrue === false;
+                }
+                if (cvv.value !== "") {
+                    cvvDanger.textContent = "";
+                }
+                else {
+                    cvvDanger.textContent = "Cvv required";
+                    istrue === false;
+                }
             }
-            if (cvv.value !== "") {
-                cvvDanger.textContent = "";
-                successfulPay.classList.add("open");
-            }
-            else {
-                cvvDanger.textContent = "Cvv required";
-            }
+
+            execute(true);
+            successfulPay.classList.add("open");
         })
         done.addEventListener("click", () => {
             window.location.assign("cart.html");
